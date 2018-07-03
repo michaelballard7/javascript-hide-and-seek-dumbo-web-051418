@@ -34,6 +34,7 @@ function deepestChild() {
     node = nextNode
     nextNode = node.children[0]
   }
-
+  
+  // this will return the node at the very bottom of the tree.
   return node
 }
