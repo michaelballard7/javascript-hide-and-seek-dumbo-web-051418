@@ -21,3 +21,19 @@ function increaseRankBy(n){
   } 
   
 }
+
+
+function deepestChild() {
+  // sets the node of choice
+  let node = document.getElementById('grand-node')
+  // calls its children property for the first element
+  let nextNode = node.children[0]
+
+  // create an iterator that runs down the tree to the very node, like dominoes or a stair case
+  while (nextNode) {
+    node = nextNode
+    nextNode = node.children[0]
+  }
+
+  return node
+}
